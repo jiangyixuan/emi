@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <FrameLayout
+        android:id="@+id/fl_home"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_home"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="2dp"
+        >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            style="@style/home_bottom_ll"
+            >
+
+            <ImageView
+                android:id="@+id/iv_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/home_press"
+                />
+            <TextView
+                android:id="@+id/tv_home"
+                style="@style/home_bottom_text"
+                android:text="首页"
+                android:textColor="@color/home_text"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_sort"
+            style="@style/home_bottom_ll"
+            >
+
+            <ImageView
+                android:id="@+id/iv_sort"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/sort"
+                />
+            <TextView
+                android:id="@+id/tv_sort"
+                style="@style/home_bottom_text"
+                android:text="分类"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_go"
+            style="@style/home_bottom_ll"
+            >
+
+            <ImageView
+                android:id="@+id/iv_go"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/go"
+                />
+            <TextView
+                android:id="@+id/tv_go"
+                style="@style/home_bottom_text"
+                android:text="带你去"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

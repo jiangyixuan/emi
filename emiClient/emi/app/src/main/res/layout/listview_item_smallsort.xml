@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="3dp"
+        android:layout_height="match_parent"
+        android:background="@color/main"
+        android:visibility="invisible"
+        />
+
+    <TextView
+        android:id="@+id/tv_item_sort_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="#FF888888"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:background="@color/sort_ll_bag_press"
+        />
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#d8d8d8"
+        />
+</LinearLayout>

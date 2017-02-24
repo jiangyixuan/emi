@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="io.github.jiangyixuan.mapper.CommDetailMapper">
+
+	<select id="getCommDetail" resultType="io.github.jiangyixuan.entity.CommDetail"
+		parameterType="java.lang.String">
+		select a.commId,material,washing,productionplace,remark,number,img1,img2,img3,img4,imgDetail,deadline,brands ,b.storeId,storeTel,storePosition from commdetail a,commoverview b,store c where a.commId=b.commId and b.storeId=c.storeId and a.commId=#{commId}
+	</select>
+	
+</mapper>

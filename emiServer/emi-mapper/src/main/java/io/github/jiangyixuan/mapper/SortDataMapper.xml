@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="io.github.jiangyixuan.mapper.SortDataMapper">
+
+	<select id="getCommsortBigs" resultType="io.github.jiangyixuan.entity.CommsortBig">
+		SELECT * FROM `commsortbig`
+	</select>
+	
+	<select id="getSmallSorts" resultType="io.github.jiangyixuan.entity.SmallSort"
+		parameterType="java.lang.Integer">
+		select * from commsortsmall where bigSortId=#{bigSortId}
+	</select>
+		
+</mapper>

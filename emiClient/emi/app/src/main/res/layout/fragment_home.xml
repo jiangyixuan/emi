@@ -1,0 +1,196 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    
+   <include layout="@layout/home_title"/>
+   
+   <ScrollView
+        android:id="@+id/pull_refresh_scrollview"  
+        android:layout_width="fill_parent"  
+        android:layout_height="fill_parent"  
+        >
+   
+	   <LinearLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:orientation="vertical"
+		    >
+	
+		   <!-- 广告条 -->
+		   <RelativeLayout 
+		       android:layout_width="fill_parent"
+		       android:layout_height="190dp"
+		       >
+		       
+		       <android.support.v4.view.ViewPager
+		            android:id="@+id/viewpager"
+				   	android:background="@mipmap/banner1"
+		            android:layout_width="match_parent"  
+		            android:layout_height="match_parent" />  
+		       <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_alignBottom="@id/viewpager"
+			        android:paddingBottom="5dp"
+			        android:orientation="vertical" >
+		
+			        <LinearLayout
+			            android:id="@+id/point_group"
+			            android:layout_width="wrap_content"
+			            android:layout_gravity="center_horizontal"
+			            android:layout_height="wrap_content" >
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content" />
+			        </LinearLayout>
+		        
+		   	   </LinearLayout>
+		       
+		   </RelativeLayout>
+		   
+		   <!-- 4个分类 -->
+		   <LinearLayout 
+		       android:layout_width="fill_parent"
+		       android:layout_height="wrap_content"
+		       android:paddingTop="5dp"
+		       android:paddingBottom="5dp"
+		       android:paddingRight="20dp"
+		       android:paddingLeft="20dp"
+		       android:orientation="horizontal"
+		       >
+		       <!-- 服饰 -->
+		       <LinearLayout 
+		           android:id="@+id/ll_clothes"
+		           style="@style/fourSort"
+		           >
+		           <ImageView 
+		               android:layout_width="wrap_content"
+		               android:layout_height="wrap_content"
+		               android:background="@mipmap/bag_fillet1"
+		               android:padding="10dp"
+		               android:src="@mipmap/clothes"
+		               />
+		           <TextView 
+		               style="@style/home_four_text"
+		               android:text="服饰"
+		               />
+		       </LinearLayout>
+		       
+		       <!-- 美食-->
+		       <LinearLayout 
+		           android:id="@+id/ll_food"
+		           style="@style/fourSort"
+		           >
+		           <ImageView 
+		               android:layout_width="wrap_content"
+		               android:layout_height="wrap_content"
+		               android:padding="10dp"
+		               android:background="@mipmap/bag_fillet2"
+		               android:src="@mipmap/food"
+		               />
+		           <TextView 
+		               style="@style/home_four_text"
+		               android:text="美食"
+		               />
+		       </LinearLayout>
+		       <!-- 电影 -->
+		       <LinearLayout 
+		           android:id="@+id/ll_movie"
+		           style="@style/fourSort"
+		           >
+		           <ImageView 
+		               android:layout_width="wrap_content"
+		               android:layout_height="wrap_content"
+		               android:padding="10dp"
+		               android:background="@mipmap/bag_fillet3"
+		               android:src="@mipmap/movie"
+		               />
+		           <TextView 
+		               style="@style/home_four_text"
+		               android:text="电影"
+		               />
+		       </LinearLayout>
+		       
+		       <!-- 娱乐 -->
+		       <LinearLayout 
+		           android:id="@+id/ll_play"
+		           style="@style/fourSort"
+		           >
+		           <ImageView 
+		               android:layout_width="wrap_content"
+		               android:layout_height="wrap_content"
+		               android:padding="10dp"
+		               android:background="@mipmap/bag_fillet4"
+		               android:src="@mipmap/play"
+		               />
+		           <TextView 
+		               style="@style/home_four_text"
+		               android:text="娱乐"
+		               />
+		       </LinearLayout>
+		       
+		       
+		   </LinearLayout>
+		   
+		   <View 
+		       android:layout_width="fill_parent"
+		       android:layout_height="10dp"
+		       android:background="#e9e7e8"
+		       /> 
+		       
+		    <!-- 推荐消息 -->   
+		   <RelativeLayout 
+		       android:id="@+id/recommend"
+		       android:layout_width="fill_parent"
+		       android:layout_height="wrap_content"
+		       android:padding="10dp"
+		       >
+		       <TextView 
+		           android:layout_width="wrap_content"
+		           android:layout_height="wrap_content"
+		           android:text="推荐"
+		           android:textSize="14sp"
+		           />
+		       <LinearLayout 
+		           android:layout_width="wrap_content"
+		           android:layout_height="wrap_content"
+		           android:layout_alignParentRight="true"
+		           android:orientation="horizontal"
+		           android:gravity="center"
+		           >
+			        <TextView 
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="更多"
+			            android:textSize="14sp"
+			           />
+			        <ImageView 
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:src="@mipmap/more"
+			            />
+		       </LinearLayout>
+		       
+		   </RelativeLayout>
+		   
+		   <ImageView
+		       android:id="@+id/iv_recommend1"
+		       android:layout_width="match_parent"
+		       android:layout_height="150dp"
+		       android:scaleType="fitXY"
+			   android:background="@mipmap/recommend1"
+		       />
+		   <ImageView
+		       android:id="@+id/iv_recommend2"
+		       android:layout_width="match_parent"
+		       android:layout_height="150dp"
+		       android:scaleType="fitXY"
+			   android:background="@mipmap/recommend2"
+		       />
+		</LinearLayout>
+		
+	</ScrollView>
+</LinearLayout>

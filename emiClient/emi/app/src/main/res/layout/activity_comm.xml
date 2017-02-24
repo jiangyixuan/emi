@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jyx.emi.activity.CommActivity"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <include layout="@layout/actionbar" />
+
+
+
+
+
+        <!-- 选项卡 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <!-- tab1 -->
+
+            <TextView
+                android:id="@+id/tv_posts"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="选项卡一"
+                android:textColor="#9c9c9c" />
+
+            <!-- tab2 -->
+
+            <TextView
+                android:id="@+id/tv_shihuo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="选项卡二"
+                android:textColor="#9c9c9c" />
+            <!-- tab3 -->
+
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_cursor"
+            android:layout_width="120dp"
+            android:layout_height="4dip"
+            android:background="@color/main"
+            android:layout_marginTop="0dp"/>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dip"
+            android:background="@color/main"
+            android:layout_marginBottom="10dp"/>
+
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_slide"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+
+
+</LinearLayout>

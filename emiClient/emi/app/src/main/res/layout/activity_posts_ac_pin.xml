@@ -1,0 +1,126 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.jyx.emi.activity.PostsInfoActivity">
+
+    <include layout="@layout/postsbar" />
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="false">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <View
+                android:id="@+id/rl_view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#c3c3c3"></View>
+
+            <LinearLayout
+                android:id="@+id/rl_ll"
+                android:layout_below="@+id/rl_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <EditText
+                    android:id="@+id/ll_et_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:hint="输入标题"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/rl_view_two"
+                android:layout_below="@+id/rl_ll"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#c3c3c3"></View>
+
+            <LinearLayout
+                android:id="@+id/rl_ll_two"
+                android:layout_below="@+id/rl_view_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <EditText
+                    android:id="@+id/ll_et_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:hint="输入价格"
+                    android:inputType="number"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/rl_view_three"
+                android:layout_below="@+id/rl_ll_two"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#c3c3c3"></View>
+
+            <RelativeLayout
+                android:id="@+id/rl_rl"
+                android:layout_below="@+id/rl_view_three"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="20dp">
+
+                <EditText
+                    android:id="@+id/et_body"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:hint="输入内容"
+                    android:textSize="16dp" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:paddingBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/rl_rl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/location" />
+
+                <TextView
+                    android:id="@+id/tv_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:text="点击定位..."
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+</LinearLayout>

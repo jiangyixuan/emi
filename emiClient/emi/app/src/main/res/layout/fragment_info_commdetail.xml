@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/text_vertical_margin">
+
+        <TextView
+            android:id="@+id/tv_brands"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:paddingBottom="@dimen/commdetail_text_space" />
+
+        <TextView
+            android:id="@+id/tv_material"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_brands"
+            android:layout_below="@id/tv_brands"
+            android:paddingBottom="@dimen/commdetail_text_space" />
+
+        <TextView
+            android:id="@+id/tv_washing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_brands"
+            android:layout_below="@id/tv_material"
+            android:paddingBottom="@dimen/commdetail_text_space" />
+
+        <TextView
+            android:id="@+id/tv_productionplace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_brands"
+            android:layout_below="@id/tv_washing"
+            android:paddingBottom="@dimen/commdetail_text_space" />
+
+        <TextView
+            android:id="@+id/tv_remark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_brands"
+            android:layout_below="@id/tv_productionplace"
+            android:paddingBottom="@dimen/commdetail_text_space" />
+
+        <TextView
+            android:id="@+id/tv_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_brands"
+            android:layout_below="@id/tv_remark"
+            android:paddingBottom="@dimen/commdetail_text_space" />
+
+
+        <TextView
+            android:id="@+id/sort1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tv_brands"
+            android:paddingBottom="@dimen/commdetail_text_space"
+            android:text="品牌" />
+
+        <TextView
+            android:id="@+id/sort2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tv_material"
+            android:layout_below="@id/sort1"
+            android:paddingBottom="@dimen/commdetail_text_space"
+            android:text="材质" />
+
+        <TextView
+            android:id="@+id/sort3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tv_washing"
+            android:layout_below="@id/sort2"
+            android:paddingBottom="@dimen/commdetail_text_space"
+            android:text="洗涤说明" />
+
+        <TextView
+            android:id="@+id/sort4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tv_productionplace"
+            android:layout_below="@id/sort3"
+            android:paddingBottom="@dimen/commdetail_text_space"
+            android:text="产地" />
+
+        <TextView
+            android:id="@+id/sort5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tv_remark"
+            android:layout_below="@id/sort4"
+            android:paddingBottom="@dimen/commdetail_text_space"
+            android:text="备注" />
+
+        <TextView
+            android:id="@+id/sort6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tv_number"
+            android:layout_below="@id/sort5"
+            android:paddingBottom="@dimen/commdetail_text_space"
+            android:text="编号" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_go_store"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/paragraph_space"
+        android:background="@drawable/selector_commdetail_gostore"
+        android:gravity="center" />
+
+    <include layout="@layout/view_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/text_vertical_margin"
+        android:paddingTop="@dimen/commdetail_text_space"
+        android:paddingBottom="@dimen/commdetail_text_space"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="5dp"
+            android:text="图文详情"
+            android:textColor="@android:color/black"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(点击图片可放大)"
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_commdetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/image_default" />
+
+</LinearLayout>

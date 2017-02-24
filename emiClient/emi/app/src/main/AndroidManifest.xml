@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jyx.emi" >
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="6rKStb1URDq8dD3ob3HcIjwpk3WDEiuy" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <activity android:name=".activity.SplashActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".activity.CommOverviewActivity" />
+        <activity android:name=".activity.AllCommendStoreActivity" />
+        <activity android:name=".activity.BrandsActivity" />
+        <activity android:name=".activity.CommDetailActivity" />
+        <activity android:name=".activity.StoreActivity" />
+        <activity android:name=".activity.CommScaleImageActivity" />
+        <activity android:name=".activity.CommBigPictureActivity" />
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.PersonalActivity" />
+        <activity android:name=".activity.CollectActivity" />
+        <activity android:name=".activity.RegistActivity" />
+        <activity android:name=".activity.StoreMapActivity" >
+        </activity>
+        <activity android:name=".activity.MapBaseActivity" />
+        <activity android:name=".activity.UpdateUserActivity" />
+        <activity android:name=".activity.AboutActivity" />
+        <activity android:name=".activity.IntroductionActivity" />
+        <activity android:name=".activity.StoreAddActivity" />
+        <activity android:name=".activity.ShowBlogActivity" />
+        <activity android:name=".activity.SearchActivity" />
+        <activity android:name=".activity.GuideActivity" />
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:exported="true"
+            android:label="@string/action_settings" />
+        <activity
+            android:name=".TestActivity"
+            android:hardwareAccelerated="true" >
+        </activity>
+        <activity
+            android:name=".activity.CommActivity"
+            android:label="@string/title_activity_comm" >
+        </activity>
+        <activity
+            android:name=".activity.PostsActivity"
+            android:label="@string/title_activity_posts" >
+        </activity>
+        <activity
+            android:name=".activity.PostsInfoActivity"
+            android:label="@string/title_activity_posts_info" >
+        </activity>
+        <activity
+            android:name=".activity.PostsAcPinActivity"
+            android:label="@string/title_activity_posts_ac_pin" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="io.github.jiangyixuan.mapper.RecommendStoreMapper">
+
+	<select id="getStoreDataAll" resultType="io.github.jiangyixuan.entity.RecommendStoreOverview"
+		parameterType="java.lang.String">
+		SELECT storeId,storeName,storeImg FROM store where storeId in(select * from recommendstore)
+	</select>
+	
+	<select id="getStoreDataSmall" resultType="io.github.jiangyixuan.entity.RecommendStoreOverview"
+		parameterType="java.lang.String">
+		SELECT storeId,storeName,storeImg FROM store where storeId in(select storeId from commoverview where smallSortId=#{smallSortId})"
+	</select>
+		
+</mapper>

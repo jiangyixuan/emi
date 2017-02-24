@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_item_sort_img"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="3dp"
+        android:src="@mipmap/image_default"
+        android:scaleType="fitXY"
+        />
+
+    <TextView
+        android:id="@+id/tv_item_sort_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="#FF888888"
+        android:textSize="10sp"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        />
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="io.github.jiangyixuan.mapper.PostsMapper">
+
+	<select id="getPostsList" resultType="io.github.jiangyixuan.entity.Posts">
+		select * from posts ORDER BY id DESC
+	</select>
+	<insert id="insertPostsOne" parameterType="java.util.Map">
+		INSERT INTO posts (`name`,title,body,time,price,address) value(#{name},#{title},#{body},#{time},#{price},#{address})
+	</insert>
+	<delete id="deletePostsOne" parameterType="java.util.Map">
+		delete from posts where `name`=#{name} and title=#{title} 
+	</delete>
+	<delete id="deletePostsac" parameterType="java.util.Map">
+		delete from postsac where  `name`=#{name} and sid=#{sid}
+	</delete>
+
+</mapper>

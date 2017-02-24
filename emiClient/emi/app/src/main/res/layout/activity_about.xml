@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/actionbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="40dp"
+        android:paddingBottom="10dp">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@mipmap/icon" />
+
+        <TextView
+            android:id="@+id/tv_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="v1.0"
+            android:textColor="@color/main"
+            android:textSize="24sp" />
+
+        <ProgressBar
+            android:id="@+id/pb_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <include layout="@layout/view_line" />
+
+    <TextView
+        android:id="@+id/tv_introduction"
+        style="@style/about_textview"
+        android:text="@string/about_emi" />
+
+    <include layout="@layout/view_line" />
+
+    <TextView
+        android:id="@+id/tv_check_update"
+        style="@style/about_textview"
+        android:drawableRight="@null"
+        android:text="@string/check_update" />
+
+    <include layout="@layout/view_line" />
+
+    <TextView
+        android:id="@+id/tv_send_wxsession"
+        style="@style/about_textview"
+        android:text="@string/share" />
+
+    <include layout="@layout/view_line" />
+
+    <TextView
+        android:id="@+id/tv_store_add"
+        style="@style/about_textview"
+        android:text="@string/store_add" />
+
+    <include layout="@layout/view_line" />
+
+    <TextView
+        android:id="@+id/tv_blog"
+        style="@style/about_textview"
+        android:text="@string/writer_blog" />
+
+    <include layout="@layout/view_line" />
+
+</LinearLayout>

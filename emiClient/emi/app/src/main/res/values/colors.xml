@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="main">#ec3c3e</color><!--主颜色-->
+    <color name="main_shape">#EE595B</color><!--主渐变颜色-->
+    <color name="comm_color">#9c9c9c</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <!--<color name="main_head">#3F51B5</color>&lt;!&ndash;主题头像背景&ndash;&gt;-->
+    <color name="home_text">#b34547</color><!-- 首页底部字体点击后颜色 -->
+    <color name="sort_ll_bag_press">#F4F4F4</color><!--分类点击后背景颜色 -->
+    <color name="sort_ll_bag">#FFFFFF</color>
+    <color name="tel_icon_color">#157EFA</color>
+    <color name="gray_white">#EDEDED</color>
+
+    <!--#ec3c3e   #EE595B-->
+
+</resources>

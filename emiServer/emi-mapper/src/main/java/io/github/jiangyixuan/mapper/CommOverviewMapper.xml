@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="io.github.jiangyixuan.mapper.CommOverviewMapper">
+
+	<select id="getCommOverviews" resultType="io.github.jiangyixuan.entity.CommOverview" parameterType="java.util.Map">
+		SELECT commId,commName,commImg,nowPrice,oldPrice FROM `commoverview` where smallSortId=${smallSortId} limit ${top}
+	</select>
+	
+	<select id="getCommOverviewsByPrice" resultType="io.github.jiangyixuan.entity.CommOverview" parameterType="java.util.Map">
+		SELECT commId,commName,commImg,nowPrice,oldPrice FROM `commoverview` where smallSortId=${smallSortId} order by nowPrice  limit ${top}
+	</select>
+	
+	<select id="getCommOverviewsByPriceDesc" resultType="io.github.jiangyixuan.entity.CommOverview" parameterType="java.util.Map">
+		SELECT commId,commName,commImg,nowPrice,oldPrice FROM `commoverview` where smallSortId=${smallSortId} order by nowPrice desc limit ${top}
+	</select>
+	
+	<select id="getCommOverviewsByDiscount" resultType="io.github.jiangyixuan.entity.CommOverview" parameterType="java.util.Map">
+		SELECT commId,commName,commImg,nowPrice,oldPrice FROM `commoverview` where smallSortId=${smallSortId} order by (nowPrice+0)/(oldPrice+0) limit ${top}
+	</select>
+	
+	<select id="getCommOverviewsByDiscountDesc" resultType="io.github.jiangyixuan.entity.CommOverview" parameterType="java.util.Map">
+		SELECT commId,commName,commImg,nowPrice,oldPrice FROM `commoverview` where smallSortId=${smallSortId} order by (nowPrice+0)/(oldPrice+0) desc limit ${top}
+	</select>
+	
+	<select id="getCollect" resultType="io.github.jiangyixuan.entity.CommOverview" parameterType="java.util.List">
+		select * from commoverview
+		<where>
+		id in
+		<foreach item="collects" collection="list" separator="," open="(" close=")" index="">
+		#{collects.id, jdbcType=NUMERIC}
+		</foreach>
+		</where>
+	</select>
+	
+	<select id="getStoreCommOverviews" resultType="io.github.jiangyixuan.entity.CommOverview" parameterType="java.lang.String">
+		select * from commoverview where storeId=#{storeId}
+	</select>
+		
+</mapper>

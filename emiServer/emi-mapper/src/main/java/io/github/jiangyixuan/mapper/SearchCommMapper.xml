@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="io.github.jiangyixuan.mapper.SearchCommMapper">
+
+	<select id="getSearchCommByKeyword" resultType="io.github.jiangyixuan.entity.SearchComm"
+		parameterType="java.lang.String">
+		select commId,commName,commImg,nowPrice,storeName from commoverview,store where commoverview.storeId=store.storeId and commName like CONCAT('%',#{keyword},'%')
+	</select>
+
+</mapper>

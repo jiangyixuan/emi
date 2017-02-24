@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/text_vertical_margin"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/commdetail_text_space"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/commdetail_text_space"
+                android:text="电话咨询"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/tv_store_tel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_tel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:text="点击拨打电话"
+            android:textColor="@color/tel_icon_color"
+            android:drawableLeft="@mipmap/store_telphone_commdetail" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/commdetail_text_space"
+        android:text="商家地址"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/tv_store_position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/commdetail_text_space" />
+
+    <TextView
+        android:id="@+id/tv_go_map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/selector_commdetail_gostore"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/paragraph_space"
+        android:layout_marginRight="@dimen/paragraph_space"
+        android:layout_marginTop="@dimen/paragraph_space"
+        android:text="进入商家地图" />
+
+</LinearLayout>

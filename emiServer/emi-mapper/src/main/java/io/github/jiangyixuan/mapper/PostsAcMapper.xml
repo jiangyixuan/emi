@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="io.github.jiangyixuan.mapper.PostsAcMapper">
+
+	<select id="getPostsAcList" resultType="io.github.jiangyixuan.entity.PostsAc" parameterType="java.util.Map">
+		select a.* from postsac a where  a.sid IN(SELECT  b.id from posts b where b.id =#{sid}  and b.`name` = #{name} ORDER BY id ASC
+	</select>
+	<insert id="insertAll" parameterType="java.util.Map">
+		insert into postsac(`user`, body, floor, time, `name`, sid) value(#{user},#{body},#{floor},#{time},#{name},{sid});
+	</insert>
+	<insert id="insertOnly" parameterType="java.util.Map">
+		INSERT INTO postsacinfo (floor,oneuser,twouser,`name`,sid,body) VALUES (#{floor},#{oneuser},#{twouser},#{name},#{sid});
+	</insert>
+	<select id="getPostsAcInfoList" resultType="io.github.jiangyixuan.entity.PostsAcInfo" parameterType="java.util.Map">
+		select * from postsacinfo where sid in
+		(select id from postsac where user=#{user} and floor =#{floor} and `name` =#{name} and sid =#{sid}) ORDER BY id asc;
+	</select>
+
+</mapper>

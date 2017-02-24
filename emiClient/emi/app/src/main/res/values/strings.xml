@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">一米</string>
+    <string name="action_settings">设置</string>
+    <string name="exit">再按一次退出程序</string>
+    <string name="net_error">网络错误</string>
+    <string name="server_error">服务器出故障了，请稍后重试亲</string>
+    <string name="title_activity_login_presenter_test">LoginPresenterTest</string>
+    <string name="errcode_success">分享成功</string>
+    <string name="errcode_cancel">分享被取消</string>
+    <string name="errcode_deny">分享被拒绝</string>
+    <string name="errcode_unknown">位置错误</string>
+    <string name="send_wxsession">分享给微信好友</string>
+    <string name="share_wxtimeline">分享到朋友圈</string>
+    <string name="tel_pwd_null">手机号或密码为空</string>
+    <string name="comm_detail_err">商品信息还未及时更新，请稍后重试</string>
+    <string name="notlogin">您还未登录,请先登录</string>
+    <string name="bbs_niece">门店社区内测中，敬请期待！</string>
+    <string name="comm_string">门店社区</string>
+    <string name="comm_tab1">社区</string>
+    <string name="comm_tab2">识货</string>
+    <string name="not_collect">未收藏任何商品</string>
+    <string name="logout_succ">退出登录成功</string>
+    <string name="check_key_fail">校验key失败</string>
+    <string name="input_null">输入内容为空</string>
+    <string name="tel_not_null">电话号码不能为空</string>
+    <string name="codes_not_null">验证码不能为空</string>
+    <string name="get_codes_succ">获取验证码成功</string>
+    <string name="sms_send_succ">短信发送成功</string>
+    <string name="login_succ">登陆成功</string>
+    <string name="login_error">用户名或密码错误</string>
+    <string name="pwd_input_error">密码不能为空且两次输入密码需一致</string>
+    <string name="regist_succ">注册成功，请返回登陆</string>
+    <string name="click_edit_pwd">点击修改密码</string>
+    <string name="tel_is_regist">该手机已被注册</string>
+    <string name="not_update">还未修改</string>
+    <string name="update_succ">修改成功</string>
+    <string name="update_error">修改失败，请重试</string>
+    <string name="operation_frequent">操作过于频繁</string>
+    <string name="writer_blog">作者博客</string>
+    <string name="store_add">商家入驻</string>
+    <string name="check_update">检查更新</string>
+    <string name="about_emi">关于一米</string>
+    <string name="introduction">一米简介</string>
+    <string name="share">分享</string>
+    <string name="serarch_hint">请输入商家或商品名称</string>
+    <string name="not_serach_result">未搜索到结果</string>
+    <string name="title_activity_comm">CommActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_posts">PostsActivity</string>
+    <string name="title_activity_posts_info">PostsInfoActivity</string>
+    <string name="title_activity_posts_ac_pin">PostsAcPinActivity</string>
+
+</resources>

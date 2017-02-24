@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="39dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="60dp"
+
+            android:padding="5.5dp"
+            android:src="@mipmap/head_portrait" />
+        <!--android:background="@mipmap/head_background"-->
+
+        <!-- <edu.jxnu.view.CircleImageView
+            android:id="@+id/iv_login"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="60dp"
+         android:layout_marginBottom="15dp"
+         android:background="@mipmap/head_background"
+         android:src="@mipmap/head_portrait" />  -->
+
+        <TextView
+            android:id="@+id/tv_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注册/登陆"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_collect"
+        style="@style/menu_ll">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/collect" />
+
+        <TextView
+            style="@style/menu_text"
+            android:text="我的收藏" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/more" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bbs"
+        style="@style/menu_ll">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/bbs" />
+
+        <TextView
+            style="@style/menu_text"
+            android:text="门店社区" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/more" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_clean_cache"
+        style="@style/menu_ll">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/clean_cache" />
+
+        <TextView
+            style="@style/menu_text"
+            android:text="清除缓存" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/more" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_about"
+        style="@style/menu_ll">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/about" />
+
+        <TextView
+            style="@style/menu_text"
+            android:text="关于一米" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/more" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
